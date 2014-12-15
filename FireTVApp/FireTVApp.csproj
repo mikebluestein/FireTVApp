@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{5A66F687-1569-4EC6-8418-B0DBAEC2F1C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FireTVApp</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>FireTVApp</AssemblyName>
+    <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="Amazon.FireTV.GameController">
+      <HintPath>..\Components\amazonfiretv-1.0\lib\android\Amazon.FireTV.GameController.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DetailActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\Detail.axml" />
+    <AndroidResource Include="Resources\drawable\a1.jpg" />
+    <AndroidResource Include="Resources\drawable\b1.jpg" />
+    <AndroidResource Include="Resources\drawable\c1.jpg" />
+    <AndroidResource Include="Resources\drawable\d1.jpg" />
+    <AndroidResource Include="Resources\drawable\e1.jpg" />
+    <AndroidResource Include="Resources\drawable\f1.jpg" />
+    <AndroidResource Include="Resources\drawable\g1.jpg" />
+    <AndroidResource Include="Resources\drawable\h1.jpg" />
+    <AndroidResource Include="Resources\drawable\i1.jpg" />
+    <AndroidResource Include="Resources\drawable\j1.jpg" />
+    <AndroidResource Include="Resources\drawable\k1.jpg" />
+    <AndroidResource Include="Resources\drawable\l1.jpg" />
+    <AndroidResource Include="Resources\drawable\m1.jpg" />
+    <AndroidResource Include="Resources\drawable\n1.jpg" />
+    <AndroidResource Include="Resources\drawable\o1.jpg" />
+    <AndroidResource Include="Resources\drawable\p1.jpg" />
+    <AndroidResource Include="Resources\drawable\q1.jpg" />
+    <AndroidResource Include="Resources\drawable\r1.jpg" />
+    <AndroidResource Include="Resources\drawable\s1.jpg" />
+    <AndroidResource Include="Resources\drawable\t1.jpg" />
+    <AndroidResource Include="Resources\drawable\v1.jpg" />
+    <AndroidResource Include="Resources\drawable\a.jpg" />
+    <AndroidResource Include="Resources\drawable\b.jpg" />
+    <AndroidResource Include="Resources\drawable\c.jpg" />
+    <AndroidResource Include="Resources\drawable\d.jpg" />
+    <AndroidResource Include="Resources\drawable\e.jpg" />
+    <AndroidResource Include="Resources\drawable\f.jpg" />
+    <AndroidResource Include="Resources\drawable\g.jpg" />
+    <AndroidResource Include="Resources\drawable\h.jpg" />
+    <AndroidResource Include="Resources\drawable\i.jpg" />
+    <AndroidResource Include="Resources\drawable\j.jpg" />
+    <AndroidResource Include="Resources\drawable\k.jpg" />
+    <AndroidResource Include="Resources\drawable\l.jpg" />
+    <AndroidResource Include="Resources\drawable\m.jpg" />
+    <AndroidResource Include="Resources\drawable\n.jpg" />
+    <AndroidResource Include="Resources\drawable\o.jpg" />
+    <AndroidResource Include="Resources\drawable\p.jpg" />
+    <AndroidResource Include="Resources\drawable\q.jpg" />
+    <AndroidResource Include="Resources\drawable\r.jpg" />
+    <AndroidResource Include="Resources\drawable\s.jpg" />
+    <AndroidResource Include="Resources\drawable\t.jpg" />
+    <AndroidResource Include="Resources\drawable\v.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <XamarinComponentReference Include="amazonfiretv">
+      <Version>1.0</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>
